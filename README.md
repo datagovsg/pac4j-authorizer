@@ -1,6 +1,8 @@
 # `pac4j-authorizer`
 
-[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/dsaid/datagovsg%2Fpac4j-authorizer%2Fpac4j-authorizer?branch=master&key=eyJhbGciOiJIUzI1NiJ9.NWNhNDBjNDA1MTMxODZjZjdhMTUyYjQx.uEnKk6__Qzfhrurzdo57Oly3AhBgrjFWZZrovG-m-8E&type=cf-1)]( https://g.codefresh.io/pipelines/pac4j-authorizer/builds?repoOwner=datagovsg&repoName=pac4j-authorizer&serviceName=datagovsg%2Fpac4j-authorizer&filter=trigger:build~Build;branch:master;pipeline:5cfa297b292d363eff05c2dd~pac4j-authorizer)
+| Scala 2.11 | Scala 2.12 |
+|:-:|:-:|
+| [![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/dsaid/dsaidgovsg%2Fpac4j-authorizer%2Fscala-2.11?branch=master&key=eyJhbGciOiJIUzI1NiJ9.NWNhNDBjNDA1MTMxODZjZjdhMTUyYjQx.uEnKk6__Qzfhrurzdo57Oly3AhBgrjFWZZrovG-m-8E&type=cf-1)]( https://g.codefresh.io/pipelines/scala-2.11/builds?repoOwner=dsaidgovsg&repoName=pac4j-authorizer&serviceName=dsaidgovsg%2Fpac4j-authorizer&filter=trigger:build~Build;branch:master;pipeline:5d77c964a3bf76b91fb244b6~scala-2.11) | [![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/dsaid/dsaidgovsg%2Fpac4j-authorizer%2Fscala-2.12?branch=master&key=eyJhbGciOiJIUzI1NiJ9.NWNhNDBjNDA1MTMxODZjZjdhMTUyYjQx.uEnKk6__Qzfhrurzdo57Oly3AhBgrjFWZZrovG-m-8E&type=cf-1)]( https://g.codefresh.io/pipelines/scala-2.12/builds?repoOwner=dsaidgovsg&repoName=pac4j-authorizer&serviceName=dsaidgovsg%2Fpac4j-authorizer&filter=trigger:build~Build;branch:master;pipeline:5d59edb3a2c1d416f9ff809e~scala-2.12) |
 
 `pac4j` Authorizer for custom authorization techniques.
 

@@ -1,10 +1,11 @@
 val nameVal = "pac4j-authorizer"
 name := nameVal
 
-val versionVal = "v0.1.0"
+val versionVal = "v0.1.1"
 version := versionVal
 
-val scalaVersionVal = "2.11.12"
+val scalaVersionVal = sys.env.get("SCALA_VERSION").getOrElse("2.11.12")
+val scalaXYVersionVal = scalaVersionVal.split(raw"\.").take(2).mkString(".")
 
 lazy val testScalafmt = taskKey[Unit]("testScalafmt")
 
@@ -30,7 +31,7 @@ def assemblySettings = Seq(
       MergeStrategy.discard
     case x => MergeStrategy.first
   },
-  assemblyJarName in assembly := f"${nameVal}-${versionVal}.jar",
+  assemblyJarName in assembly := f"${nameVal}_${scalaXYVersionVal}-${versionVal}.jar",
 )
 
 lazy val root = (project in file(".")).settings(
