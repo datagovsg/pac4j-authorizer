@@ -1,10 +1,11 @@
 val nameVal = "pac4j-authorizer"
 name := nameVal
 
-val versionVal = "v0.1.1"
+val versionVal = "v0.2.0"
 version := versionVal
 
-val scalaVersionVal = sys.env.get("SCALA_VERSION").getOrElse("2.11.12")
+// Tested with 2.12.16 and 2.13.8
+val scalaVersionVal = sys.env.get("SCALA_VERSION").getOrElse("2.12.16")
 val scalaXYVersionVal = scalaVersionVal.split(raw"\.").take(2).mkString(".")
 
 lazy val testScalafmt = taskKey[Unit]("testScalafmt")
