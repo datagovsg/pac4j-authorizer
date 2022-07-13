@@ -1,3 +1,9 @@
+addCommandAlias("fmt",
+  """
+  Compile / scalafmt;
+  Test / scalafmt;
+  """)
+
 val nameVal = "pac4j-authorizer"
 name := nameVal
 
@@ -15,10 +21,10 @@ lazy val commonSettings = Seq(
   scalaVersion := scalaVersionVal,
   resolvers += DefaultMavenRepository,
   libraryDependencies ++= Seq(
-    "io.buji" % "buji-pac4j" % "4.0.0",
-    "org.pac4j" % "pac4j-oauth" % "3.2.0" % "runtime",
-    "org.apache.shiro" % "shiro-web" % "1.4.0",
-    "org.apache.shiro" % "shiro-core" % "1.4.0",
+    "io.buji" % "buji-pac4j" % "7.0.0",
+    "org.pac4j" % "pac4j-oauth" % "5.4.3" % "runtime",
+    "org.apache.shiro" % "shiro-web" % "1.9.1",
+    "org.apache.shiro" % "shiro-core" % "1.9.1",
   ),
   // Disable parallel test execution to avoid SparkSession conflicts
   parallelExecution in Test := false
